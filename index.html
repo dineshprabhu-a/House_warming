@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ta" data-lang="ta">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title data-i18n="meta.title">புதுமனை புகுவிழா | குடும்பம்</title>
+<meta name="description" data-i18n-attr="content:meta.description" content="மதுரையில் எங்கள் புதிய இல்லத்தின் புதுமனை புகுவிழா நிகழ்விற்கு உங்களை அன்புடன் அழைக்கிறோம்." />
+<meta name="theme-color" content="#3A1C0E" />
+<meta property="og:title" data-i18n-attr="content:meta.title" content="புதுமனை புகுவிழா | குடும்பம்" />
+<meta property="og:description" data-i18n-attr="content:meta.description" content="மதுரையில் எங்கள் புதிய இல்லத்தின் புதுமனை புகுவிழா நிகழ்விற்கு உங்களை அன்புடன் அழைக்கிறோம்." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/images/madurai-hero.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%AA%94%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="style.css" />
+<noscript><style>.preloader{display:none}.reveal-fade-up,.reveal-scale,.reveal-fade{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader" class="preloader" role="status" aria-live="polite">
+  <div class="preloader__lamp" aria-hidden="true">
+    <svg viewBox="0 0 120 160" width="90" height="120">
+      <path d="M60 150 Q40 150 40 140 Q40 132 60 132 Q80 132 80 140 Q80 150 60 150 Z" fill="#8a5a2b"/>
+      <rect x="52" y="100" width="16" height="34" rx="3" fill="#b8860b"/>
+      <path d="M20 100 Q60 60 100 100 Q100 112 60 112 Q20 112 20 100 Z" fill="#c9a227"/>
+      <circle cx="60" cy="95" r="8" fill="#e8c766"/>
+      <path class="flame" d="M60 62 Q66 78 60 90 Q54 78 60 62 Z" fill="#ffb347"/>
+    </svg>
+  </div>
+</div>
+
+<!-- FIRST-VISIT LANGUAGE GATE -->
+<div id="langGate" class="lang-gate" role="dialog" aria-modal="true" aria-labelledby="langGateTitle">
+  <div class="lang-gate__card">
+    <h2 id="langGateTitle" class="lang-gate__title">மொழியைத் தேர்ந்தெடுக்கவும்<br /><span>Choose your language</span></h2>
+    <div class="lang-gate__buttons">
+      <button type="button" class="btn btn--primary" data-pick-lang="ta" lang="ta">தமிழ்</button>
+      <button type="button" class="btn btn--outline-dark" data-pick-lang="en" lang="en">English</button>
+    </div>
+  </div>
+</div>
+
+<!-- DECORATIVE LAYERS -->
+<div class="petals" id="petals" aria-hidden="true"></div>
+
+<!-- SAVE THE DATE BANNER -->
+<div id="saveBanner" class="save-banner" role="region" data-i18n-attr="aria-label:banner.label" aria-label="தேதியைக் குறித்துக்கொள்ளுங்கள்">
+  <p class="save-banner__text">
+    <strong data-i18n="banner.label">தேதியைக் குறித்துக்கொள்ளுங்கள்</strong>
+    <span id="bannerWhen"></span>
+    <span id="bannerDays" class="save-banner__days"></span>
+  </p>
+  <a href="#share" class="save-banner__cta" data-i18n="banner.cta">நாள்காட்டியில் சேர்க்க</a>
+  <button type="button" id="bannerClose" class="save-banner__close" data-i18n-attr="aria-label:banner.close" aria-label="மூடு">&times;</button>
+</div>
+
+
+<!-- NAVIGATION -->
+<header class="nav" id="siteNav">
+  <nav class="nav__inner" aria-label="Primary">
+    <a href="#hero" class="nav__logo" data-i18n="brand.short">புகுவிழா</a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" data-i18n-attr="aria-label:a11y.menu" aria-label="மெனு">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__menu" id="navMenu">
+      <li><a href="#hero" data-i18n="nav.home">முகப்பு</a></li>
+      <li><a href="#our-home" data-i18n="nav.ourHome">எங்கள் இல்லம்</a></li>
+      <li><a href="#ceremony" data-i18n="nav.ceremony">நிகழ்ச்சி</a></li>
+      <li><a href="#schedule" data-i18n="nav.schedule">நேரம்</a></li>
+      <li><a href="#location" data-i18n="nav.location">அமைவிடம்</a></li>
+      <li><a href="#how-to-reach" data-i18n="nav.travel">பயணம்</a></li>
+      <li><a href="#invitation-card" data-i18n="nav.invitation">அழைப்பிதழ்</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero__bg" role="img" data-i18n-attr="aria-label:a11y.heroBg" aria-label="சூரிய உதயத்தில் மதுரை கோயில் நிழல்"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__vignette" aria-hidden="true"></div>
+  <div class="hero__grain" aria-hidden="true"></div>
+  <div class="hero__content reveal-fade-up">
+    <p class="hero__sri" data-i18n="hero.sri">ஸ்ரீ</p>
+    <h1 class="hero__title" data-i18n="hero.title">புதுமனை புகுவிழா</h1>
+    <p class="hero__subtitle" data-i18n="hero.subtitle">எங்கள் புதிய இல்லத்தின் புதுமனை புகுவிழா நிகழ்வில் தங்களையும் தங்கள் குடும்பத்தினரையும் அன்புடன் அழைக்கிறோம்.</p>
+
+    <div class="hero__details">
+      <p class="hero__guest" id="heroGuest" hidden></p>
+      <p class="hero__family" id="heroFamily"></p>
+      <p class="hero__meta">
+        <span id="heroDate"></span> &nbsp;•&nbsp; <span id="heroTime"></span>
+      </p>
+      <p class="hero__venue" id="heroVenue"></p>
+    </div>
+
+    <div class="hero__buttons">
+      <a href="#invitation-card" class="btn btn--primary" data-i18n="hero.btnInvite">அழைப்பிதழைக் காண்க</a>
+      <a href="#location" class="btn btn--outline" data-i18n="hero.btnDirections">வழி காண்க</a>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true"><span></span></div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 240 30" preserveAspectRatio="xMidYMid meet">
+    <line x1="0" y1="15" x2="80" y2="15" stroke="currentColor" stroke-width="1.2"/>
+    <line x1="160" y1="15" x2="240" y2="15" stroke="currentColor" stroke-width="1.2"/>
+    <path d="M100 22 L108 10 L114 15 L120 6 L126 15 L132 10 L140 22 Z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+    <circle cx="120" cy="6" r="2.4" fill="currentColor"/>
+  </svg>
+</div>
+
+<!-- OUR NEW HOME -->
+<section id="our-home" class="section our-home reveal-fade-up">
+  <div class="kolam-bg" aria-hidden="true"></div>
+  <div class="container our-home__grid">
+    <div class="our-home__image">
+      <svg viewBox="0 0 400 300" class="house-illustration" role="img" data-i18n-attr="aria-label:a11y.house" aria-label="பாரம்பரிய தென்னிந்திய இல்லத்தின் ஓவியம்">
+        <rect x="40" y="140" width="320" height="140" fill="#e8d9b8"/>
+        <polygon points="30,140 200,50 370,140" fill="#b8785c"/>
+        <polygon points="60,140 200,72 340,140" fill="#c9a878"/>
+        <rect x="170" y="190" width="60" height="90" fill="#3A1C0E"/>
+        <rect x="90" y="170" width="40" height="40" fill="#fff8e7" stroke="#3A1C0E" stroke-width="4"/>
+        <rect x="270" y="170" width="40" height="40" fill="#fff8e7" stroke="#3A1C0E" stroke-width="4"/>
+        <rect x="10" y="278" width="380" height="12" fill="#8EA05C"/>
+        <circle cx="200" cy="48" r="10" fill="#C9A227"/>
+      </svg>
+    </div>
+    <div class="our-home__text">
+      <span class="eyebrow" data-i18n="ourHome.eyebrow">எங்கள் புதிய இல்லம்</span>
+      <h2 data-i18n="ourHome.title">ஒரு புதிய தொடக்கம்</h2>
+      <p data-i18n="ourHome.desc">கனவுகளால் உருவான எங்கள் புதிய இல்லம், அன்பும் மகிழ்ச்சியும் நிறைந்த இனிய நினைவுகளின் தொடக்கமாகட்டும்.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 240 30" preserveAspectRatio="xMidYMid meet">
+    <line x1="0" y1="15" x2="80" y2="15" stroke="currentColor" stroke-width="1.2"/>
+    <line x1="160" y1="15" x2="240" y2="15" stroke="currentColor" stroke-width="1.2"/>
+    <path d="M100 22 L108 10 L114 15 L120 6 L126 15 L132 10 L140 22 Z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+    <circle cx="120" cy="6" r="2.4" fill="currentColor"/>
+  </svg>
+</div>
+
+<!-- COUNTDOWN -->
+<section id="countdown" class="section countdown reveal-scale">
+  <div class="container">
+    <h2 class="section-title section-title--light" data-i18n="countdown.title">இனிய தொடக்கத்தை நோக்கி...</h2>
+    <div class="countdown__grid" id="countdownGrid">
+      <div class="countdown__unit">
+        <span class="countdown__num" id="cdDays">00</span>
+        <span class="countdown__label" data-i18n="countdown.days">நாட்கள்</span>
+      </div>
+      <div class="countdown__unit">
+        <span class="countdown__num" id="cdHours">00</span>
+        <span class="countdown__label" data-i18n="countdown.hours">மணிநேரம்</span>
+      </div>
+      <div class="countdown__unit">
+        <span class="countdown__num" id="cdMinutes">00</span>
+        <span class="countdown__label" data-i18n="countdown.minutes">நிமிடங்கள்</span>
+      </div>
+      <div class="countdown__unit">
+        <span class="countdown__num" id="cdSeconds">00</span>
+        <span class="countdown__label" data-i18n="countdown.seconds">விநாடிகள்</span>
+      </div>
+    </div>
+    <p class="countdown__done" id="countdownDone" hidden data-i18n="countdown.done">இனிய புதுமனை புகுவிழா நல்வாழ்த்துகள்!</p>
+  </div>
+</section>
+
+<!-- CEREMONY SCHEDULE -->
+<section id="schedule" class="section schedule reveal-fade-up">
+  <div class="container">
+    <span class="eyebrow eyebrow--center" data-i18n="schedule.eyebrow">நிகழ்ச்சி நேரம்</span>
+    <h2 class="section-title" data-i18n="schedule.title">சடங்கு நிகழ்ச்சிகள்</h2>
+    <ol class="timeline" id="timelineList" data-i18n-attr="aria-label:a11y.schedule" aria-label="நிகழ்ச்சி நிரல்"></ol>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 240 30" preserveAspectRatio="xMidYMid meet">
+    <line x1="0" y1="15" x2="80" y2="15" stroke="currentColor" stroke-width="1.2"/>
+    <line x1="160" y1="15" x2="240" y2="15" stroke="currentColor" stroke-width="1.2"/>
+    <path d="M100 22 L108 10 L114 15 L120 6 L126 15 L132 10 L140 22 Z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+    <circle cx="120" cy="6" r="2.4" fill="currentColor"/>
+  </svg>
+</div>
+
+<!-- TRADITIONAL ELEMENTS -->
+<section id="ceremony" class="section elements reveal-fade-up">
+  <div class="container">
+    <h2 class="section-title" data-i18n="elements.title">பாரம்பரிய அடையாளங்கள்</h2>
+    <div class="elements__grid" id="elementsGrid"></div>
+  </div>
+</section>
+
+<!-- INVITATION MESSAGE -->
+<section id="invitation-message" class="section invitation-message reveal-fade-up">
+  <div class="kolam-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="invite-note">
+      <p class="invite-note__greeting" data-i18n="inviteMsg.greeting">அன்புடையீர்,</p>
+      <p data-i18n="inviteMsg.body1">எங்கள் புதிய இல்லத்தின் புதுமனை புகுவிழா நிகழ்வில் தங்களையும் தங்கள் குடும்பத்தினரையும் அன்புடன் வரவேற்கிறோம்.</p>
+      <p data-i18n="inviteMsg.body2">தங்களின் வருகையும் ஆசீர்வாதமும் எங்கள் இல்லத்திற்கு மகிழ்ச்சியையும் நிறைவையும் தரும்.</p>
+      <p class="invite-note__sign">
+        <span data-i18n="inviteMsg.signoff">அன்புடன்,</span><br/>
+        <strong id="inviteNoteFamily"></strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- DIGITAL INVITATION CARD -->
+<section id="invitation-card" class="section invitation-card-section reveal-scale">
+  <div class="container container--narrow">
+    <div class="invite-card">
+      <div class="invite-card__corner invite-card__corner--tl" aria-hidden="true"></div>
+      <div class="invite-card__corner invite-card__corner--tr" aria-hidden="true"></div>
+      <div class="invite-card__corner invite-card__corner--bl" aria-hidden="true"></div>
+      <div class="invite-card__corner invite-card__corner--br" aria-hidden="true"></div>
+
+      <svg class="invite-card__gopuram" viewBox="0 0 300 90" aria-hidden="true">
+        <path d="M150 5 L170 25 L185 20 L195 35 L215 30 L220 50 L80 50 L85 30 L105 35 L115 20 L130 25 Z" fill="none" stroke="#C9A227" stroke-width="1.5"/>
+        <line x1="60" y1="55" x2="240" y2="55" stroke="#C9A227" stroke-width="1.5"/>
+      </svg>
+
+      <p class="invite-card__sri" data-i18n="hero.sri">ஸ்ரீ</p>
+      <h3 class="invite-card__title" data-i18n="hero.title">புதுமனை புகுவிழா</h3>
+      <p class="invite-card__family" id="cardFamily"></p>
+      <p class="invite-card__date" id="cardDate"></p>
+      <p class="invite-card__time" id="cardTime"></p>
+      <p class="invite-card__venue" id="cardVenue"></p>
+      <p class="invite-card__address" id="cardAddress"></p>
+
+      <svg class="invite-card__lamp" viewBox="0 0 60 70" aria-hidden="true">
+        <path d="M30 66 Q22 66 22 62 Q22 58 30 58 Q38 58 38 62 Q38 66 30 66 Z" fill="#8a5a2b"/>
+        <rect x="27" y="46" width="6" height="14" fill="#b8860b"/>
+        <path d="M10 46 Q30 30 50 46 Q50 52 30 52 Q10 52 10 46 Z" fill="#C9A227"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="section location reveal-fade-up">
+  <div class="container">
+    <h2 class="section-title" data-i18n="location.title">அமைவிடம்</h2>
+    <div class="location__card">
+      <p class="location__venue" id="locVenue"></p>
+      <p class="location__address" id="locAddress"></p>
+      <p class="location__landmark"><span data-i18n="location.nearby">அருகிலுள்ள இடம்:</span> <a id="locLandmark" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;text-underline-offset:3px"></a></p>
+      <div class="location__actions">
+        <a href="#" id="mapsLink" target="_blank" rel="noopener noreferrer" class="btn btn--primary" data-i18n="location.viewMaps">Google Maps-ல் காண்க</a>
+        <a href="#" id="directionsLink" target="_blank" rel="noopener noreferrer" class="btn btn--outline" data-i18n="location.getDirections">வழி பெறுக</a>
+        <button type="button" id="copyAddressBtn" class="btn btn--ghost" data-i18n="location.copyAddress">முகவரியை நகலெடுக்க</button>
+      </div>
+      <p class="location__copied" id="copiedMsg" role="status" aria-live="polite" hidden data-i18n="location.copied">முகவரி நகலெடுக்கப்பட்டது</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO REACH -->
+<section id="how-to-reach" class="section travel reveal-fade-up">
+  <div class="container">
+    <span class="eyebrow eyebrow--center" data-i18n="travel.eyebrow">பயண வழிகாட்டி</span>
+    <h2 class="section-title" data-i18n="travel.title">எங்கள் இல்லத்திற்கு வருவது எப்படி</h2>
+    <ul class="travel__chips">
+      <li data-i18n="travel.madurai">மதுரையிலிருந்து 30 கி.மீ</li>
+      <li data-i18n="travel.trichy">திருச்சியிலிருந்து 80 கி.மீ</li>
+    </ul>
+    <ol class="travel__steps">
+      <li class="travel__step">
+        <span class="travel__num" aria-hidden="true">1</span>
+        <h3 data-i18n="travel.step1Title">பேருந்தில் ஏறுங்கள்</h3>
+        <p data-i18n="travel.step1Desc">மதுரை ↔ திருச்சி வழித்தடத்தில் செல்லும் எக்ஸ்பிரஸ் அல்லது டவுன் பேருந்தில் ஏறுங்கள். எங்கள் கிராமம் இரு நகரங்களுக்கும் இடையில் உள்ளது.</p>
+      </li>
+      <li class="travel__step">
+        <span class="travel__num" aria-hidden="true">2</span>
+        <h3 data-i18n="travel.step2Title">கருங்காலக்குடிக்கு டிக்கெட்</h3>
+        <p data-i18n="travel.step2Desc">கருங்காலக்குடிக்கு டிக்கெட் எடுத்து அங்கே இறங்குங்கள்.</p>
+      </li>
+      <li class="travel__step">
+        <span class="travel__num" aria-hidden="true">3</span>
+        <h3 data-i18n="travel.step3Title">அம்பலகாரன்பட்டியில் இறங்குங்கள்</h3>
+        <p data-i18n="travel.step3Desc">கருங்காலக்குடியிலிருந்து எங்கள் இல்லம் 2 கி.மீ தொலைவில் உள்ளது. ஆட்டோ அல்லது டவுன் பேருந்தில் ஏறி அம்பலகாரன்பட்டியில் இறங்குங்கள்.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- SHARE -->
+<section id="share" class="section share reveal-fade-up">
+  <div class="container">
+    <h2 class="section-title" data-i18n="actions.title">தங்கள் வருகையை உறுதிசெய்யுங்கள்</h2>
+    <div class="share__actions">
+      <a id="rsvpBtn" class="btn btn--primary" target="_blank" rel="noopener noreferrer" hidden data-i18n="rsvp.button">வருகையை உறுதிசெய்ய</a>
+      <button type="button" id="icsBtn" class="btn btn--ghost" data-i18n="calendar.ics">நாள்காட்டியில் சேர்க்க</button>
+      <button type="button" id="whatsappShare" class="btn btn--whatsapp">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Z"/></svg>
+        <span data-i18n="share.button">அழைப்பிதழைப் பகிரவும்</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p class="footer__signoff" data-i18n="footer.signoff">அன்புடன்,</p>
+    <p class="footer__family" id="footerFamily"></p>
+    <p class="footer__message" data-i18n="footer.message">எங்கள் இல்லத்திற்கு தங்களின் வருகையை அன்புடன் எதிர்நோக்குகிறோம்.</p>
+    <p class="footer__copyright">&copy; <span id="footerYear">2026</span> Dineshprabhu</p>
+  </div>
+</footer>
+
+<!-- FLOATING CONTROLS -->
+<button type="button" id="musicToggle" class="floating-btn floating-btn--music" aria-label="Play music / இசையை இயக்க" aria-pressed="false">
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3" fill="currentColor"/><circle cx="18" cy="16" r="3" fill="currentColor"/></svg>
+</button>
+<audio id="bgMusic" src="assets/music/traditional.mp3" loop preload="none"></audio>
+
+<button type="button" id="backToTop" class="floating-btn floating-btn--top" data-i18n-attr="aria-label:backToTop.label" aria-label="மேலே செல்ல">
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 5l-7 7h4v7h6v-7h4z"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
